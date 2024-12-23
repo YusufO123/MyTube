@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Tarzı Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyTube</div>
+        <input type="text" class="search-bar" placeholder="Ara...">
+        <button class="search-button">Ara</button>
+    </header>
+    <nav class="categories">
+        <button class="category">Müzik</button>
+        <button class="category">Oyun</button>
+        <button class="category">Eğitim</button>
+        <button class="category">Eğlence</button>
+    </nav>
+    <main>
+        <section class="featured">
+            <h2>Öne Çıkan Video</h2>
+            <div class="featured-video">
+                <video controls class="video-player">
+                    <source src="sample.mp4" type="video/mp4">
+                    Tarayıcınız video oynatmayı desteklemiyor.
+                </video>
+                <h3>Video Başlığı</h3>
+            </div>
+        </section>
+        <section class="videos">
+            <h2>Önerilen Videolar</h2>
+            <div class="video-grid" id="videoGrid">
+                <!-- Dinamik videolar burada yüklenecek -->
+            </div>
+        </section>
+        <section class="upload">
+            <h2>Video Yükle</h2>
+            <input type="file" id="videoUpload" accept="video/*">
+            <button id="uploadButton">Yükle</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MyTube - Tüm Hakları Saklıdır.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
